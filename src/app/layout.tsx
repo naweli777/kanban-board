@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/redux/provider";
+import Navbar from "./components/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,8 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body >
+      <body className='pb-24 h-screen overflow-hidden'> {/* update style here*/}
       <Providers>
+        <Navbar/>
       {children}
       </Providers></body>
     </html>
