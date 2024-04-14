@@ -1,4 +1,4 @@
-export const id = () => Math.random().toString(36).substring(2, 10);
+const id = () => Math.random().toString(36).substring(2, 10);
 
 export const data = {
   "boards": [
@@ -36,3 +36,6 @@ export const data = {
     }
   ]
 }
+
+// const jsonData = JSON.stringify(data, null, 2);
+// console.log(jsonData);
